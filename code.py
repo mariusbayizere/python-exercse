@@ -1,19 +1,10 @@
+import matplotlib.pyplot as plt
 
-def sum(x: int, y: int) -> int:
-    """
-    Returns the sum of two parameters.
+x_values: list[int] = [1, 2, 3, 4, 5]
+y_values: list[int] = [2, 3, 5, 7, 11]
 
-    
-    Parameters:
-    x (int): one number
-    y (int): another number
-
-    
-    Returns:
-    int: the sum of x and y
-    """
-    print("x is", x)
-    print("y is", y)
-    return x + y
-
-print(sum(3, 4))
+plt.plot(x_values, y_values)
+plt.title('This chat show as the information about the chat')
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.show()
